@@ -2,7 +2,7 @@ import React,{Component} from 'react';
 import CardList from './CardList';
 import { robots } from './robots';
 import SearchBox from './SearchBox';
-
+import './App.css';
 
 
 class App extends Component{
@@ -16,10 +16,7 @@ class App extends Component{
 
 	onSearchChange = (event) => {
 
-		this.setState({ searchfield: event.target.value
-		});
-		console.log(event.target.value);
-		
+		this.setState({ searchfield: event.target.value	});
 	}
 
 	render(){
